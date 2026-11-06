@@ -1,0 +1,517 @@
+{
+ "old": "../agentic-ontologist/data/BioDiv/envo-sweet/envo.owl, ../agentic-ontologist/data/BioDiv/envo-sweet/sweet.owl",
+ "new": "../agentic-ontologist/data/BioDiv/envo-sweet/envo.owl, ../agentic-ontologist/data/BioDiv/envo-sweet/sweet.owl, alignment ../agentic-ontologist/data/BioDiv/envo-sweet/envo-sweet.rdf",
+ "blocked": true,
+ "axioms_added": 842,
+ "axioms_removed": 0,
+ "new_unsatisfiable": [
+  {
+   "subject": "http://purl.obolibrary.org/obo/ENVO_00003044",
+   "claim": "ENVO_00003044 ⊑ ⊥",
+   "kernel": "accepted",
+   "because": [
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00003044 ⊑ ENVO_00002012",
+    "ENVO_00002012 ⊑ ENVO_00002010",
+    "ENVO_00002010 ⊑ SalineWater",
+    "Brine ⊓ SalineWater ⊑ ⊥"
+   ],
+   "added_axioms_used": [
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00002010 ⊑ SalineWater"
+   ]
+  },
+  {
+   "subject": "http://purl.obolibrary.org/obo/ENVO_00003045",
+   "claim": "ENVO_00003045 ⊑ ⊥",
+   "kernel": "accepted",
+   "because": [
+    "ENVO_00003045 ⊑ ENVO_00003044",
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00003044 ⊑ ENVO_00002012",
+    "ENVO_00002012 ⊑ ENVO_00002010",
+    "ENVO_00002010 ⊑ SalineWater",
+    "Brine ⊓ SalineWater ⊑ ⊥"
+   ],
+   "added_axioms_used": [
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00002010 ⊑ SalineWater"
+   ]
+  },
+  {
+   "subject": "http://purl.obolibrary.org/obo/ENVO_03000041",
+   "claim": "ENVO_03000041 ⊑ ⊥",
+   "kernel": "accepted",
+   "because": [
+    "ENVO_03000041 ⊑ ∃BFO_0000051.ENVO_00003044",
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00003044 ⊑ ENVO_00002012",
+    "ENVO_00002012 ⊑ ENVO_00002010",
+    "ENVO_00002010 ⊑ SalineWater",
+    "Brine ⊓ SalineWater ⊑ ⊥"
+   ],
+   "added_axioms_used": [
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00002010 ⊑ SalineWater"
+   ]
+  },
+  {
+   "subject": "http://purl.obolibrary.org/obo/ENVO_03000042",
+   "claim": "ENVO_03000042 ⊑ ⊥",
+   "kernel": "accepted",
+   "because": [
+    "ENVO_03000042 ⊑ ∃RO_0000057.ENVO_00003044",
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00003044 ⊑ ENVO_00002012",
+    "ENVO_00002012 ⊑ ENVO_00002010",
+    "ENVO_00002010 ⊑ SalineWater",
+    "Brine ⊓ SalineWater ⊑ ⊥"
+   ],
+   "added_axioms_used": [
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00002010 ⊑ SalineWater"
+   ]
+  },
+  {
+   "subject": "http://purl.obolibrary.org/obo/ENVO_03000045",
+   "claim": "ENVO_03000045 ⊑ ⊥",
+   "kernel": "accepted",
+   "because": [
+    "ENVO_03000045 ⊑ ∃RO_0002234.ENVO_00003044",
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00003044 ⊑ ENVO_00002012",
+    "ENVO_00002012 ⊑ ENVO_00002010",
+    "ENVO_00002010 ⊑ SalineWater",
+    "Brine ⊓ SalineWater ⊑ ⊥"
+   ],
+   "added_axioms_used": [
+    "ENVO_00003044 ⊑ Brine",
+    "ENVO_00002010 ⊑ SalineWater"
+   ]
+  },
+  {
+   "subject": "http://sweetontology.net/matrWater/Brine",
+   "claim": "Brine ⊑ ⊥",
+   "kernel": "accepted",
+   "because": [
+    "Brine ⊑ ENVO_00003044",
+    "ENVO_00003044 ⊑ ENVO_00002012",
+    "ENVO_00002012 ⊑ ENVO_00002010",
+    "ENVO_00002010 ⊑ SalineWater",
+    "Brine ⊓ SalineWater ⊑ ⊥"
+   ],
+   "added_axioms_used": [
+    "Brine ⊑ ENVO_00003044",
+    "ENVO_00002010 ⊑ SalineWater"
+   ]
+  }
+ ],
+ "resolved_unsatisfiable": [],
+ "new_clashes": [],
+ "lost_total": 0,
+ "gained_total": 61834,
+ "lost": [],
+ "gained": [
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_00000000",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ ENVO_00000000"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_00010504",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_00010504"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_01000281",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_01000324",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01000324"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_01000635",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_01001275",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_01001311",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ENVO_01001483",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001483"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ HumanActivity",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization",
+    "Realization ⊑ ExperimentActivity",
+    "ExperimentActivity ⊑ Experiment",
+    "Experiment ⊑ Investigation",
+    "Investigation ⊑ Research",
+    "Research ⊑ HumanActivity"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ KnowledgeDomain",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ StructuralConfiguration",
+    "StructuralConfiguration ⊑ RockConstituent",
+    "RockConstituent ⊑ Constituent",
+    "Constituent ⊑ ConsistenceProperty",
+    "ConsistenceProperty ⊑ MaterialProperty",
+    "MaterialProperty ⊑ PhysicalProperty",
+    "PhysicalProperty ⊑ ∃studyOf.Physics",
+    "∃studyOf.⊤ ⊑ KnowledgeDomain"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Experiment",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization",
+    "Realization ⊑ ExperimentActivity",
+    "ExperimentActivity ⊑ Experiment"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ExperimentActivity",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization",
+    "Realization ⊑ ExperimentActivity"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Investigate",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization",
+    "Realization ⊑ ExperimentActivity",
+    "ExperimentActivity ⊑ Experiment",
+    "Experiment ⊑ Investigate"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Investigation",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization",
+    "Realization ⊑ ExperimentActivity",
+    "ExperimentActivity ⊑ Experiment",
+    "Experiment ⊑ Investigation"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Realization",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Research",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ DataProduct",
+    "DataProduct ⊑ Collection",
+    "Collection ⊑ Data",
+    "Data ⊑ Realization",
+    "Realization ⊑ ExperimentActivity",
+    "ExperimentActivity ⊑ Experiment",
+    "Experiment ⊑ Investigation",
+    "Investigation ⊑ Research"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ PhysicalProperty",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ StructuralConfiguration",
+    "StructuralConfiguration ⊑ RockConstituent",
+    "RockConstituent ⊑ Constituent",
+    "Constituent ⊑ ConsistenceProperty",
+    "ConsistenceProperty ⊑ MaterialProperty",
+    "MaterialProperty ⊑ PhysicalProperty"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Property",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ StructuralConfiguration",
+    "StructuralConfiguration ⊑ RockConstituent",
+    "RockConstituent ⊑ Constituent",
+    "Constituent ⊑ ConsistenceProperty",
+    "ConsistenceProperty ⊑ MaterialProperty",
+    "MaterialProperty ⊑ PhysicalProperty",
+    "PhysicalProperty ⊑ Property"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ Constituent",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ StructuralConfiguration",
+    "StructuralConfiguration ⊑ RockConstituent",
+    "RockConstituent ⊑ Constituent"
+   ]
+  },
+  {
+   "verdict": "entailed",
+   "kernel": "accepted",
+   "claim": "ENVO_00000001 ⊑ ConsistenceProperty",
+   "because": [
+    "ENVO_00000001 ⊑ ENVO_00000067",
+    "ENVO_00000067 ⊑ Cave",
+    "Cave ⊑ FluvialLandform",
+    "FluvialLandform ⊑ Landform",
+    "Landform ⊑ Land",
+    "Land ⊑ ENVO_01000635",
+    "ENVO_01000635 ⊑ ENVO_01001311",
+    "ENVO_01001311 ⊑ ENVO_01001275",
+    "ENVO_01001275 ⊑ ENVO_01000281",
+    "ENVO_01000281 ⊑ Layer",
+    "Layer ⊑ StructuralConfiguration",
+    "StructuralConfiguration ⊑ RockConstituent",
+    "RockConstituent ⊑ Constituent",
+    "Constituent ⊑ ConsistenceProperty"
+   ]
+  }
+ ],
+ "out_of_budget": 0,
+ "kernel": {
+  "accepted": 26
+ }
+}
