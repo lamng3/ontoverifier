@@ -1,0 +1,16 @@
+@prefix : <http://example.org/lang#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Water a owl:Class ; rdfs:label "water" .
+:Rock a owl:Class ; rdfs:label "rock" ; owl:disjointWith :Water .
+:Lake a owl:Class ; rdfs:label "lake" ;
+    rdfs:comment "A lake is a body of water." ;
+    rdfs:subClassOf :Water .
+:Basalt a owl:Class ; rdfs:label "basalt" ;
+    rdfs:comment "Basalt is a kind of water found in volcanoes." ;
+    rdfs:subClassOf :Rock .
+:Pond a owl:Class ; rdfs:label "pond" ;
+    rdfs:comment "A pond is a small body of water that is fed by a stream." .
+:Stream a owl:Class ; rdfs:label "stream" .
+:fedBy a owl:ObjectProperty ; rdfs:label "fed by" .

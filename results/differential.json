@@ -1,0 +1,23 @@
+{
+ "tally": {
+  "ontologies": 499,
+  "classes": 3992,
+  "agree": 3992,
+  "we_only": 0,
+  "hermit_only": 0,
+  "hermit_failed": 1,
+  "unsat_proofs": 809,
+  "witnesses": 3183,
+  "unknown": 0,
+  "accepted": 3992,
+  "rejected": 0,
+  "seconds": 229.0,
+  "seed": 1
+ },
+ "disagreements": [
+  {
+   "ontology": 280,
+   "hermit_error": "tableau exceeded 256 nodes; the fragment search did not terminate"
+  }
+ ]
+}

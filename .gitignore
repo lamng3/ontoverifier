@@ -1,0 +1,9 @@
+.lake/
+build/
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+out/
+results/**/*.lean
+results/envo-definitions/

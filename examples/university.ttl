@@ -1,0 +1,31 @@
+@prefix : <http://example.org/uni#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Person a owl:Class .
+:Student a owl:Class ; rdfs:subClassOf :Person .
+:Staff a owl:Class ; rdfs:subClassOf :Person ; owl:disjointWith :Student .
+:Lecturer a owl:Class ; rdfs:subClassOf :Staff .
+:Course a owl:Class ; owl:disjointWith :Person .
+:Seminar a owl:Class ; rdfs:subClassOf :Course .
+
+:teaches a owl:ObjectProperty ; rdfs:domain :Staff ; rdfs:range :Course .
+:enrolledIn a owl:ObjectProperty ; rdfs:domain :Student ; rdfs:range :Course .
+:prerequisite a owl:ObjectProperty, owl:TransitiveProperty ; rdfs:domain :Course ; rdfs:range :Course .
+:taughtBy a owl:ObjectProperty ; owl:inverseOf :teaches .
+
+# A modelling mistake reached through a subclass chain.
+:TeachingAssistant a owl:Class ; rdfs:subClassOf :Student, :Lecturer .
+
+# A mistake that takes a restriction and a range to reach.
+:Advisor a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ; owl:onProperty :teaches ; owl:someValuesFrom :Person ] .
+
+# Satisfiable, and needs a witness with a second element.
+:Instructor a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ; owl:onProperty :teaches ; owl:someValuesFrom :Seminar ] .
+
+:alice a :Student ; :enrolledIn :logic .
+:logic a :Seminar .
+# :bob teaches a course and is enrolled in one, so he is Staff and Student.
+:bob :teaches :logic ; :enrolledIn :logic .

@@ -1,0 +1,5 @@
+name = "OntoVerifier"
+defaultTargets = ["OntoVerifier"]
+
+[[lean_lib]]
+name = "OntoVerifier"
