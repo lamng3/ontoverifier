@@ -41,7 +41,9 @@ def _env():
 
 
 def available():
-    return shutil.which("lean", path=_env()["PATH"]) is not None
+    """Lean is installed, and this is a checkout with the Lean library to build against."""
+    return (shutil.which("lean", path=_env()["PATH"]) is not None
+            and (ROOT / "lakefile.toml").exists())
 
 
 def _toolchain():

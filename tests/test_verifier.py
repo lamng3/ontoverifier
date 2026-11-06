@@ -260,3 +260,10 @@ def test_a_timeout_is_not_called_a_rejection(tmp_path):
     batch = lean.Batch(tmp_path / "slow.lean")
     batch.add("t", "theorem t : 1 + 1 = 2 := rfl\n")
     assert batch.run(timeout=0.001)["t"].kernel == "not_run"
+
+
+def test_a_theory_can_lose_axioms_without_changing_the_original(theory):
+    gone = sub("Lecturer", "Staff")
+    smaller = theory.without(gone)
+    assert gone in theory.axioms and gone not in smaller.axioms
+    assert NS + "Staff" not in Search(smaller).class_(NS + "Lecturer").cls("x0")
