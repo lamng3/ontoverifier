@@ -253,3 +253,10 @@ def test_the_kernel_rejects_a_mask_that_hides_part_of_the_model(theory, tmp_path
     batch.add("bad", lying)
     batch.prelude = table.prelude()
     assert batch.run()["bad"].kernel == "rejected"
+
+
+@needs_lean
+def test_a_timeout_is_not_called_a_rejection(tmp_path):
+    batch = lean.Batch(tmp_path / "slow.lean")
+    batch.add("t", "theorem t : 1 + 1 = 2 := rfl\n")
+    assert batch.run(timeout=0.001)["t"].kernel == "not_run"
