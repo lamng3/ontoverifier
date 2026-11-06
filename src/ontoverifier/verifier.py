@@ -133,8 +133,9 @@ class Verifier:
         self.findings.append(finding)
         return finding
 
-    def prove_unsatisfiable(self):
-        for name in self.unsatisfiable_classes():
+    def prove_unsatisfiable(self, names=None):
+        """Write a proof for these classes, which must be unsatisfiable; by default, all that are."""
+        for name in self.unsatisfiable_classes() if names is None else names:
             outcome = self.outcome(name)
             label = self._name("unsat", name)
             proof = emit.Proof(outcome)

@@ -102,6 +102,15 @@ class Theory:
             other.add(axiom.kind, *axiom.args)
         return other
 
+    def without(self, *axioms):
+        """A copy with these axioms taken out."""
+        gone = set(axioms)
+        other = self.extended()
+        other.axioms = [a for a in other.axioms if a not in gone]
+        other._seen -= gone
+        other._sort()
+        return other
+
     def _sort(self):
         """A fixed order, so that the same ontology always writes the same proofs."""
         self.axioms.sort(key=lambda a: (a.kind, a.args))
