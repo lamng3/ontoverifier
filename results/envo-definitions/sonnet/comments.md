@@ -1,0 +1,175 @@
+# Definitions against axioms: /data/envo.owl
+
+Model: `command:claude -p --model claude-sonnet-5-5 --tools "" --no-session-persistence --setting-sources ""`. 60 definitions, 50 with claims. Verdicts: {'agrees': 42, 'says more': 20}.
+
+## says more (20)
+
+- **lagoon**: A sheet of saline water separated from the open sea by sand or shingle banks. The sheet of water between an offshore reef, especially of coral and mainland. The sheet of water within a ring or horseshoe shaped atoll.
+  - claim: `lagoon ⊑ saline water body` (kernel: accepted)
+- **sea beach**: A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a sea.
+  - claim: `sea beach ⊑ ∃adjacent to.shoreline` (kernel: accepted)
+- **obsolete lava field**: A feature formed by cooled lava, the molten rock that is expelled by a volcano during an eruption.
+  - claim: `obsolete lava field ⊑ ∃derives from.lava` (kernel: accepted)
+- **ocean trench**: Hemispheric-scale long but narrow topographic depressions of the sea floor. They are the deepest parts of the ocean floor.
+  - claim: `ocean trench ⊑ ∃part of.ocean floor` (kernel: accepted)
+- **ocean trench**: Hemispheric-scale long but narrow topographic depressions of the sea floor. They are the deepest parts of the ocean floor.
+  - claim: `ocean trench ⊑ ∃part of.sea floor` (kernel: accepted)
+- **nest of ant**: A pile of earth, sand, pine needles, or clay or a composite of these and other materials that build up at the entrances of the subterranean dwellings of ant colonies as they are excavated. A colony is built and maintained by legions of worker ants, who carry tiny bits of dirt and pebbles in their mandibles and deposit them near the exit of the colony. They normally deposit the dirt or vegetation at the top of the hill to prevent it from sliding back into the colony, but in some species they actively sculpt the materials into specific shapes, and may create nest chambers within the mound.
+  - claim: `nest of ant ⊑ mound` (kernel: accepted)
+- **marine anoxic zone**: Marine anoxic zones are areas of marine water that are depleted of dissolved oxygen. This condition is generally found in areas that have restricted water exchange. In most cases, oxygen is prevented from reaching the deeper levels by a physical barrier (sill) as well as by a pronounced density stratification. Anoxic conditions will occur if the rate of oxidation of organic matter by bacteria is greater than the supply of dissolved oxygen.
+  - claim: `marine anoxic zone ⊑ anoxic water` (kernel: accepted)
+- **marine anoxic zone**: Marine anoxic zones are areas of marine water that are depleted of dissolved oxygen. This condition is generally found in areas that have restricted water exchange. In most cases, oxygen is prevented from reaching the deeper levels by a physical barrier (sill) as well as by a pronounced density stratification. Anoxic conditions will occur if the rate of oxidation of organic matter by bacteria is greater than the supply of dissolved oxygen.
+  - claim: `marine anoxic zone ⊑ marine water body` (kernel: accepted)
+- **marine warm-water sphere**: The marine warm-water sphere describes a water mass extending to depths of ca. 800 to 1000 m in low and middle latitudes. It is separated from the marine cold-water sphere by the permanent marine thermocline
+  - claim: `marine warm-water sphere ⊑ ∃adjacent to.permanent marine thermocline` (kernel: accepted)
+- **dome swamp**: A dome swamp is a swamp which occurs in a depression where deeper waters at the centre of the swamp allow  trees to grow taller relative to those in shallower regions of the depression. This creates a dome-like shape.
+  - claim: `dome swamp ⊑ swamp area` (kernel: accepted)
+- **dome swamp**: A dome swamp is a swamp which occurs in a depression where deeper waters at the centre of the swamp allow  trees to grow taller relative to those in shallower regions of the depression. This creates a dome-like shape.
+  - claim: `dome swamp ⊑ ∃occurs in.depression` (kernel: accepted)
+- **tropical mixed needleleaf forest**: A mixed needleleaf forest which is subject to tropical climate patterns.
+  - claim: `tropical mixed needleleaf forest ⊑ needleleaf forest` (kernel: accepted)
+- **motor**: A motor is a machine designed to convert one or more forms of energy into mechanical energy.
+  - claim: `motor ⊑ ∃has input.energy` (kernel: accepted)
+- **photoevaporation**: A process during which energetic radiation ionises gas and causes it to disperse away from the ionising source.
+  - claim: `photoevaporation ⊑ ∃has participant.radiation` (kernel: accepted)
+- **freshwater seep riverine anchor ice**: Anchor ice which is attached to a riverbed where a river flows into a marine water body and which is formed by the freezing of freshwater seeping out of the riverbed's sediments.
+  - claim: `freshwater seep riverine anchor ice ⊑ ∃located in.river bed` (kernel: accepted)
+- **waterspout**: A tornado which connects a cumulus or cumulonimbus cloud to a body of water, often transporting water from that water body along the spiraling winds constituting  its vortex.
+  - claim: `waterspout ⊑ ∃connects.water body` (kernel: accepted)
+- **floeberg**: An ice mass which is composed of a large amount of sea ice in the form of a hummock or a group of such hummocks, frozen together and separated from any surrounding ice by sea water.
+  - claim: `floeberg ⊑ ∃part of.hummock` (kernel: accepted)
+- **floeberg**: An ice mass which is composed of a large amount of sea ice in the form of a hummock or a group of such hummocks, frozen together and separated from any surrounding ice by sea water.
+  - claim: `floeberg ⊑ ∃surrounded by.sea water` (kernel: accepted)
+- **cirque glacier**: A small glacier contained within a cirque basin.
+  - claim: `cirque glacier ⊑ ∃located in.cirque` (kernel: accepted)
+- **freshwater algal bloom**: An algal bloom that is located in freshwater. Freshwater algal blooms are the result of an excess of nutrients, particularly some phosphates.
+  - claim: `freshwater algal bloom ⊑ ∃located in.freshwater environment` (kernel: accepted)
+
+## agrees (42)
+
+- **national geopolitical entity**: A political association with effective dominion over a geographic area.
+  - claim: `national geopolitical entity ⊑ political entity` (kernel: accepted)
+  - because: `ENVO_00000009 ⊑ ENVO_00000123`
+- **sulfur spring**: A spring whose water contains a significant amount of dissolved derivatives of sulfur.
+  - claim: `sulfur spring ⊑ spring` (kernel: accepted)
+  - because: `ENVO_00000126 ⊑ ENVO_00000027`
+- **dry valley**: A valley that no longer has a surface flow of water. Typically found in either Karst (limestone) or chalk terrain.
+  - claim: `dry valley ⊑ valley` (kernel: accepted)
+  - because: `ENVO_00000128 ⊑ ENVO_00000100`
+- **tidal watercourse**: A watercourse which has the intensity and direction of its flow primarily determined by the tides.
+  - claim: `tidal watercourse ⊑ watercourse` (kernel: accepted)
+  - because: `ENVO_00000412 ⊑ ENVO_00000029`
+- **dell**: A small wooded valley, either U- or V-shaped.
+  - claim: `dell ⊑ valley` (kernel: accepted)
+  - because: `ENVO_00000439 ⊑ ENVO_00000100`
+- **hydroelectric reservoir**: A reservoir constructed for the purpose of generating electricity.
+  - claim: `hydroelectric reservoir ⊑ reservoir` (kernel: accepted)
+  - because: `ENVO_00000448 ⊑ ENVO_00000025`
+- **apron**: A gentle slope, with a generally smooth surface, particularly found around groups of islands and seamounts.
+  - claim: `apron ⊑ slope` (kernel: accepted)
+  - because: `ENVO_00000530 ⊑ ENVO_00002000`
+- **soil**: Soil is an environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, gases, liquids, and a broad range of resident micro- and macroorganisms.
+  - claim: `soil ⊑ environmental material` (kernel: accepted)
+  - because: `ENVO_00001998 ⊑ ENVO_00010483`
+- **muddy soil**: Soil which is composed of a large proportion of mud, thus having properties resembling mud.
+  - claim: `muddy soil ⊑ soil` (kernel: accepted)
+  - because: `ENVO_00005771 ⊑ ENVO_00001998`
+- **marine warm-water sphere**: The marine warm-water sphere describes a water mass extending to depths of ca. 800 to 1000 m in low and middle latitudes. It is separated from the marine cold-water sphere by the permanent marine thermocline
+  - claim: `marine warm-water sphere ⊑ marine water mass` (kernel: accepted)
+  - because: `ENVO_01000109 ⊑ ENVO_01000686`
+- **sandy sediment**: Sediment characterised by an average particle diameter between 62.5 micrometers and 2 mm.
+  - claim: `sandy sediment ⊑ sediment` (kernel: accepted)
+  - because: `ENVO_01000118 ⊑ ENVO_00002007`
+- **mesophilic sediment**: Sediment characterised by a temperature of 15-45 degrees Celsius and high-to-low oxygenation. Often impacted by hydrothermal fluid flows.
+  - claim: `mesophilic sediment ⊑ sediment` (kernel: accepted)
+  - because: `ENVO_01000131 ⊑ ENVO_00002007`
+- **indeterminate root nodule**: Indeterminate nodules are found on temperate legumes like Pisum  (pea), Medicago (alfalfa), Trifolium (clover), and Vicia (vetch). They earned the moniker "indeterminate" because they maintain an active apical meristem that produces new cells for growth over the life of the nodule. Because they are actively growing, indeterminate nodules manifest zones which demarcate different stages of development/symbiosis.
+  - claim: `indeterminate root nodule ⊑ root nodule` (kernel: accepted)
+  - because: `ENVO_01000168 ⊑ ENVO_01000164`
+- **shrubland biome**: A shrubland biome is a terrestrial biome which includes, across its entire spatial extent, dense groups of shrubs.
+  - claim: `shrubland biome ⊑ terrestrial biome` (kernel: accepted)
+  - because: `ENVO_01000176 ⊑ ENVO_00000446`
+- **montane desert biome**: A montane desert biome is a desert biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions.
+  - claim: `montane desert biome ⊑ desert biome` (kernel: accepted)
+  - because: `ENVO_01000185 ⊑ ENVO_01000179`
+- **sedimentary stratum**: A stratum is a layer which is composed of sedimentary rock or soil with internally consistent characteristics that distinguish it from other layers.
+  - claim: `sedimentary stratum ⊑ layer` (kernel: accepted)
+  - because: `ENVO_01000282 ⊑ ENVO_01000281`
+- **tropical mixed needleleaf forest**: A mixed needleleaf forest which is subject to tropical climate patterns.
+  - claim: `tropical mixed needleleaf forest ⊑ mixed forest` (kernel: accepted)
+  - because: `ENVO_01000401 ⊑ ENVO_01000431`
+- **patio**: A patio is a paved outdoor area, adjacent to a human house, and used for dining or recreation.
+  - claim: `patio ⊑ ∃adjacent to.human house` (kernel: accepted)
+  - because: `ENVO_01000424 ⊑ ∃RO_0002220.ENVO_01000418`
+- **material pooling disposition**: The disposition of an environmental system to sequester and store some material entity.
+  - claim: `material pooling disposition ⊑ environmental disposition` (kernel: accepted)
+  - because: `ENVO_01000455 ⊑ ENVO_01000452`
+- **quartz glass**: Quartz glass is a glass which is composed of silica in amorphous (non-crystalline) form.
+  - claim: `quartz glass ⊑ glass` (kernel: accepted)
+  - because: `ENVO_01000485 ⊑ ENVO_01000481`; `ENVO_01000481 ⊑ ENVO_01000480`
+- **area of open water**: An area of a planet's surface which is primarily composed of water in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction.
+  - claim: `area of open water ⊑ ∃part of.planetary surface` (kernel: accepted)
+  - because: `ENVO_01000666 ⊑ ∃BFO_0000050.ENVO_01000324`
+- **solid environmental material**: An environmental material which is in a solid state.
+  - claim: `solid environmental material ⊑ environmental material` (kernel: accepted)
+  - because: `ENVO_01000814 ⊑ ENVO_00010483`
+- **photosphere**: An astronomical body part which is composed of those parts of a star, distal from the star's core, from which light is radiated into space.
+  - claim: `photosphere ⊑ astronomical body part` (kernel: accepted)
+  - because: `ENVO_01000821 ⊑ ENVO_01000813`
+- **photosphere**: An astronomical body part which is composed of those parts of a star, distal from the star's core, from which light is radiated into space.
+  - claim: `photosphere ⊑ ∃part of.star` (kernel: accepted)
+  - because: `ENVO_01000821 ⊑ ∃BFO_0000050.ENVO_01000801`
+- **tropical marine upwelling biome**: A marine upwelling biome which is subject to tropical climate patterns.
+  - claim: `tropical marine upwelling biome ⊑ marine upwelling biome` (kernel: accepted)
+  - because: `ENVO_01000859 ⊑ ENVO_01000858`
+- **shower fixture**: A plumbing fixture within which a human or other animal may bathe under a spray of water.
+  - claim: `shower fixture ⊑ plumbing fixture` (kernel: accepted)
+  - because: `ENVO_01000992 ⊑ ENVO_01000989`
+- **sediment permeated by saline water**: Sediment which has its porespace filled by water with increased levels of sodium chloride and other salts.
+  - claim: `sediment permeated by saline water ⊑ sediment` (kernel: accepted)
+  - because: `ENVO_01001036 ⊑ ENVO_00002007`
+- **environment associated with a plant part or small plant**: An environmental system determined by part of a living or dead plant, or a whole small plant.
+  - claim: `environment associated with a plant part or small plant ⊑ environmental system` (kernel: accepted)
+  - because: `ENVO_01001057 ⊑ ENVO_01001110`; `ENVO_01001110 ⊑ ENVO_01000254`
+- **aerosolised liquids**: An aerosol which has non-gaseous parts that are primarily composed of liquid droplets.
+  - claim: `aerosolised liquids ⊑ aerosol` (kernel: accepted)
+  - because: `ENVO_01001088 ⊑ ENVO_00010505`
+- **aeolian lake**: A lake which fills a basin that has been dammed by wind-blown sand,  formed between sand dunes oriented by winds; or formed by wind action under previously arid paleoenvironments.
+  - claim: `aeolian lake ⊑ lake` (kernel: accepted)
+  - because: `ENVO_01001105 ⊑ ENVO_00000020`
+- **convective storm**: An atmospheric storm which is generated by the heating and convection of moist and unstable air masses.
+  - claim: `convective storm ⊑ atmospheric storm` (kernel: accepted)
+  - because: `ENVO_01001294 ⊑ ENVO_01000877`
+- **extra-tropical cyclone**: A warm-core cyclone which occurs in the middle and high latitudes, primarily drawing energy from horizontal temperature contrasts between atmospheric fronts.
+  - claim: `extra-tropical cyclone ⊑ warm core cyclone` (kernel: accepted)
+  - because: `ENVO_01001295 ⊑ ENVO_01001298`
+- **estuarine open water upper water column**: A layer of estuarine water which extends from the surface of the water column to the pycnocline or mid-depth and from a fiat boundary where the estuary bed below the water column reaches a depth of 4 meters until the end of the estuary most distal from the coast.
+  - claim: `estuarine open water upper water column ⊑ aquatic estuarine layer` (kernel: accepted)
+  - because: `ENVO_01001316 ⊑ ENVO_01001301`
+- **freshwater seep riverine anchor ice**: Anchor ice which is attached to a riverbed where a river flows into a marine water body and which is formed by the freezing of freshwater seeping out of the riverbed's sediments.
+  - claim: `freshwater seep riverine anchor ice ⊑ anchor ice` (kernel: accepted)
+  - because: `ENVO_01001344 ⊑ ENVO_01001337`; `ENVO_01001337 ⊑ ENVO_01001335`
+- **cirrocumulus castellanus cloud**: A cirrocumulus cloud which 1) has linearly arranged cumuliform protuberances which resemble crenellated turrets or towers, some of which are taller than they are wide in some portion of their upper parts, 2) possess a lower region or base which connects these protuberances.
+  - claim: `cirrocumulus castellanus cloud ⊑ cirrocumulus cloud` (kernel: accepted)
+  - because: `ENVO_01001426 ⊑ ENVO_01001407`
+- **waterspout**: A tornado which connects a cumulus or cumulonimbus cloud to a body of water, often transporting water from that water body along the spiraling winds constituting  its vortex.
+  - claim: `waterspout ⊑ tornado` (kernel: accepted)
+  - because: `ENVO_01001487 ⊑ ENVO_01001482`
+- **floeberg**: An ice mass which is composed of a large amount of sea ice in the form of a hummock or a group of such hummocks, frozen together and separated from any surrounding ice by sea water.
+  - claim: `floeberg ⊑ ice mass` (kernel: accepted)
+  - because: `ENVO_01001535 ⊑ ENVO_01001536`; `ENVO_01001536 ⊑ ENVO_01000293`
+- **ice lead**: A surface layer of a water body which has been formed as the result of surface ice fracturing and moving apart.
+  - claim: `ice lead ⊑ surface layer of a water body` (kernel: accepted)
+  - because: `ENVO_01001551 ⊑ ENVO_01001554`
+- **synovial fluid material**: A bodily fluid material which is composed primarily of synovial fluid, a bodily fluid secreted by the synovial membrane into the joint cavity to form a thin layer at the surface of cartilage.
+  - claim: `synovial fluid material ⊑ bodily fluid material` (kernel: accepted)
+  - because: `ENVO_02000039 ⊑ ENVO_02000019`
+- **cirque glacier**: A small glacier contained within a cirque basin.
+  - claim: `cirque glacier ⊑ glacier` (kernel: accepted)
+  - because: `ENVO_03000013 ⊑ ENVO_00000133`
+- **methane gas emission process**: A hydrocarbon gas emission process during which a portion of methane gas is transported into the atmosphere.
+  - claim: `methane gas emission process ⊑ hydrocarbon gas emission process` (kernel: accepted)
+  - because: `ENVO_03000094 ⊑ ENVO_03000093`
+- **freshwater algal bloom**: An algal bloom that is located in freshwater. Freshwater algal blooms are the result of an excess of nutrients, particularly some phosphates.
+  - claim: `freshwater algal bloom ⊑ algal bloom` (kernel: accepted)
+  - because: `ENVO_2000005 ⊑ ENVO_2000004`

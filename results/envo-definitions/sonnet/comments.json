@@ -1,0 +1,1196 @@
+{
+ "source": "/data/envo.owl",
+ "model": "command:claude -p --model claude-sonnet-5-5 --tools \"\" --no-session-persistence --setting-sources \"\"",
+ "definitions": 60,
+ "with_claims": 50,
+ "invalid_claims": 3,
+ "errors": 0,
+ "verdicts": {
+  "agrees": 42,
+  "says more": 20
+ },
+ "readings": [
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000009",
+   "label": "national geopolitical entity",
+   "definition": "A political association with effective dominion over a geographic area.",
+   "claims": [
+    {
+     "claim": "national geopolitical entity ⊑ political entity",
+     "lean": "∀ x, c_ENVO_00000009 x → c_ENVO_00000123 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000009 ⊑ ENVO_00000123"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000038",
+   "label": "lagoon",
+   "definition": "A sheet of saline water separated from the open sea by sand or shingle banks. The sheet of water between an offshore reef, especially of coral and mainland. The sheet of water within a ring or horseshoe shaped atoll.",
+   "claims": [
+    {
+     "claim": "lagoon ⊑ saline water body",
+     "lean": "∀ x, c_ENVO_00000038 x → c_ENVO_01001319 x",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000092",
+   "label": "sea beach",
+   "definition": "A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a sea.",
+   "claims": [
+    {
+     "claim": "sea beach ⊑ ∃adjacent to.shoreline",
+     "lean": "∀ x, c_ENVO_00000092 x → ∃ y, p_RO_0002220 x y ∧ c_ENVO_00000486 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000095",
+   "label": "obsolete lava field",
+   "definition": "A feature formed by cooled lava, the molten rock that is expelled by a volcano during an eruption.",
+   "claims": [
+    {
+     "claim": "obsolete lava field ⊑ ∃derives from.lava",
+     "lean": "∀ x, c_ENVO_00000095 x → ∃ y, p_RO_0001000 x y ∧ c_ENVO_01000231 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000111",
+   "label": "forested area",
+   "definition": "An area with a high density of trees. A small forest may be called a wood.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000126",
+   "label": "sulfur spring",
+   "definition": "A spring whose water contains a significant amount of dissolved derivatives of sulfur.",
+   "claims": [
+    {
+     "claim": "sulfur spring ⊑ spring",
+     "lean": "∀ x, c_ENVO_00000126 x → c_ENVO_00000027 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000126 ⊑ ENVO_00000027"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000128",
+   "label": "dry valley",
+   "definition": "A valley that no longer has a surface flow of water. Typically found in either Karst (limestone) or chalk terrain.",
+   "claims": [
+    {
+     "claim": "dry valley ⊑ valley",
+     "lean": "∀ x, c_ENVO_00000128 x → c_ENVO_00000100 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000128 ⊑ ENVO_00000100"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000135",
+   "label": "buffer zone",
+   "definition": "A geographical region that serves the purpose of keeping two or more other areas (often, but not necessarily, countries) distant from one another, for whatever reason.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000275",
+   "label": "ocean trench",
+   "definition": "Hemispheric-scale long but narrow topographic depressions of the sea floor. They are the deepest parts of the ocean floor.",
+   "claims": [
+    {
+     "claim": "ocean trench ⊑ ∃part of.ocean floor",
+     "lean": "∀ x, c_ENVO_00000275 x → ∃ y, p_BFO_0000050 x y ∧ c_ENVO_00000426 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    },
+    {
+     "claim": "ocean trench ⊑ ∃part of.sea floor",
+     "lean": "∀ x, c_ENVO_00000275 x → ∃ y, p_BFO_0000050 x y ∧ c_ENVO_00000482 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000412",
+   "label": "tidal watercourse",
+   "definition": "A watercourse which has the intensity and direction of its flow primarily determined by the tides.",
+   "claims": [
+    {
+     "claim": "tidal watercourse ⊑ watercourse",
+     "lean": "∀ x, c_ENVO_00000412 x → c_ENVO_00000029 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000412 ⊑ ENVO_00000029"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000439",
+   "label": "dell",
+   "definition": "A small wooded valley, either U- or V-shaped.",
+   "claims": [
+    {
+     "claim": "dell ⊑ valley",
+     "lean": "∀ x, c_ENVO_00000439 x → c_ENVO_00000100 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000439 ⊑ ENVO_00000100"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000448",
+   "label": "hydroelectric reservoir",
+   "definition": "A reservoir constructed for the purpose of generating electricity.",
+   "claims": [
+    {
+     "claim": "hydroelectric reservoir ⊑ reservoir",
+     "lean": "∀ x, c_ENVO_00000448 x → c_ENVO_00000025 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000448 ⊑ ENVO_00000025"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000516",
+   "label": "hummock",
+   "definition": "A patch of ground, distinct from and slightly above the surrounding plain or wetland. Often occurs in groups.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00000530",
+   "label": "apron",
+   "definition": "A gentle slope, with a generally smooth surface, particularly found around groups of islands and seamounts.",
+   "claims": [
+    {
+     "claim": "apron ⊑ slope",
+     "lean": "∀ x, c_ENVO_00000530 x → c_ENVO_00002000 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00000530 ⊑ ENVO_00002000"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00001998",
+   "label": "soil",
+   "definition": "Soil is an environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, gases, liquids, and a broad range of resident micro- and macroorganisms.",
+   "claims": [
+    {
+     "claim": "soil ⊑ environmental material",
+     "lean": "∀ x, c_ENVO_00001998 x → c_ENVO_00010483 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00001998 ⊑ ENVO_00010483"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00005771",
+   "label": "muddy soil",
+   "definition": "Soil which is composed of a large proportion of mud, thus having properties resembling mud.",
+   "claims": [
+    {
+     "claim": "muddy soil ⊑ soil",
+     "lean": "∀ x, c_ENVO_00005771 x → c_ENVO_00001998 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_00005771 ⊑ ENVO_00001998"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_00005804",
+   "label": "nest of ant",
+   "definition": "A pile of earth, sand, pine needles, or clay or a composite of these and other materials that build up at the entrances of the subterranean dwellings of ant colonies as they are excavated. A colony is built and maintained by legions of worker ants, who carry tiny bits of dirt and pebbles in their mandibles and deposit them near the exit of the colony. They normally deposit the dirt or vegetation at the top of the hill to prevent it from sliding back into the colony, but in some species they actively sculpt the materials into specific shapes, and may create nest chambers within the mound.",
+   "claims": [
+    {
+     "claim": "nest of ant ⊑ mound",
+     "lean": "∀ x, c_ENVO_00005804 x → c_ENVO_00000180 x",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000066",
+   "label": "marine anoxic zone",
+   "definition": "Marine anoxic zones are areas of marine water that are depleted of dissolved oxygen. This condition is generally found in areas that have restricted water exchange. In most cases, oxygen is prevented from reaching the deeper levels by a physical barrier (sill) as well as by a pronounced density stratification. Anoxic conditions will occur if the rate of oxidation of organic matter by bacteria is greater than the supply of dissolved oxygen.",
+   "claims": [
+    {
+     "claim": "marine anoxic zone ⊑ anoxic water",
+     "lean": "∀ x, c_ENVO_01000066 x → c_ENVO_01000173 x",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    },
+    {
+     "claim": "marine anoxic zone ⊑ marine water body",
+     "lean": "∀ x, c_ENVO_01000066 x → c_ENVO_00001999 x",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000109",
+   "label": "marine warm-water sphere",
+   "definition": "The marine warm-water sphere describes a water mass extending to depths of ca. 800 to 1000 m in low and middle latitudes. It is separated from the marine cold-water sphere by the permanent marine thermocline",
+   "claims": [
+    {
+     "claim": "marine warm-water sphere ⊑ marine water mass",
+     "lean": "∀ x, c_ENVO_01000109 x → c_ENVO_01000686 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000109 ⊑ ENVO_01000686"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "marine warm-water sphere ⊑ ∃adjacent to.permanent marine thermocline",
+     "lean": "∀ x, c_ENVO_01000109 x → ∃ y, p_RO_0002220 x y ∧ c_ENVO_01000106 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000118",
+   "label": "sandy sediment",
+   "definition": "Sediment characterised by an average particle diameter between 62.5 micrometers and 2 mm.",
+   "claims": [
+    {
+     "claim": "sandy sediment ⊑ sediment",
+     "lean": "∀ x, c_ENVO_01000118 x → c_ENVO_00002007 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000118 ⊑ ENVO_00002007"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000131",
+   "label": "mesophilic sediment",
+   "definition": "Sediment characterised by a temperature of 15-45 degrees Celsius and high-to-low oxygenation. Often impacted by hydrothermal fluid flows.",
+   "claims": [
+    {
+     "claim": "mesophilic sediment ⊑ sediment",
+     "lean": "∀ x, c_ENVO_01000131 x → c_ENVO_00002007 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000131 ⊑ ENVO_00002007"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000168",
+   "label": "indeterminate root nodule",
+   "definition": "Indeterminate nodules are found on temperate legumes like Pisum  (pea), Medicago (alfalfa), Trifolium (clover), and Vicia (vetch). They earned the moniker \"indeterminate\" because they maintain an active apical meristem that produces new cells for growth over the life of the nodule. Because they are actively growing, indeterminate nodules manifest zones which demarcate different stages of development/symbiosis.",
+   "claims": [
+    {
+     "claim": "indeterminate root nodule ⊑ root nodule",
+     "lean": "∀ x, c_ENVO_01000168 x → c_ENVO_01000164 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000168 ⊑ ENVO_01000164"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000176",
+   "label": "shrubland biome",
+   "definition": "A shrubland biome is a terrestrial biome which includes, across its entire spatial extent, dense groups of shrubs.",
+   "claims": [
+    {
+     "claim": "shrubland biome ⊑ terrestrial biome",
+     "lean": "∀ x, c_ENVO_01000176 x → c_ENVO_00000446 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000176 ⊑ ENVO_00000446"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000185",
+   "label": "montane desert biome",
+   "definition": "A montane desert biome is a desert biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions.",
+   "claims": [
+    {
+     "claim": "montane desert biome ⊑ desert biome",
+     "lean": "∀ x, c_ENVO_01000185 x → c_ENVO_01000179 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000185 ⊑ ENVO_01000179"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000282",
+   "label": "sedimentary stratum",
+   "definition": "A stratum is a layer which is composed of sedimentary rock or soil with internally consistent characteristics that distinguish it from other layers.",
+   "claims": [
+    {
+     "claim": "sedimentary stratum ⊑ layer",
+     "lean": "∀ x, c_ENVO_01000282 x → c_ENVO_01000281 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000282 ⊑ ENVO_01000281"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000328",
+   "label": "dome swamp",
+   "definition": "A dome swamp is a swamp which occurs in a depression where deeper waters at the centre of the swamp allow  trees to grow taller relative to those in shallower regions of the depression. This creates a dome-like shape.",
+   "claims": [
+    {
+     "claim": "dome swamp ⊑ swamp area",
+     "lean": "∀ x, c_ENVO_01000328 x → c_ENVO_01001208 x",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    },
+    {
+     "claim": "dome swamp ⊑ ∃occurs in.depression",
+     "lean": "∀ x, c_ENVO_01000328 x → ∃ y, p_BFO_0000066 x y ∧ c_ENVO_00000309 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000401",
+   "label": "tropical mixed needleleaf forest",
+   "definition": "A mixed needleleaf forest which is subject to tropical climate patterns.",
+   "claims": [
+    {
+     "claim": "tropical mixed needleleaf forest ⊑ mixed forest",
+     "lean": "∀ x, c_ENVO_01000401 x → c_ENVO_01000431 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000401 ⊑ ENVO_01000431"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "tropical mixed needleleaf forest ⊑ needleleaf forest",
+     "lean": "∀ x, c_ENVO_01000401 x → c_ENVO_01000433 x",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000424",
+   "label": "patio",
+   "definition": "A patio is a paved outdoor area, adjacent to a human house, and used for dining or recreation.",
+   "claims": [
+    {
+     "claim": "patio ⊑ ∃adjacent to.human house",
+     "lean": "∀ x, c_ENVO_01000424 x → ∃ y, p_RO_0002220 x y ∧ c_ENVO_01000418 y",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000424 ⊑ ∃RO_0002220.ENVO_01000418"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000455",
+   "label": "material pooling disposition",
+   "definition": "The disposition of an environmental system to sequester and store some material entity.",
+   "claims": [
+    {
+     "claim": "material pooling disposition ⊑ environmental disposition",
+     "lean": "∀ x, c_ENVO_01000455 x → c_ENVO_01000452 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000455 ⊑ ENVO_01000452"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000485",
+   "label": "quartz glass",
+   "definition": "Quartz glass is a glass which is composed of silica in amorphous (non-crystalline) form.",
+   "claims": [
+    {
+     "claim": "quartz glass ⊑ glass",
+     "lean": "∀ x, c_ENVO_01000485 x → c_ENVO_01000480 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000485 ⊑ ENVO_01000481",
+      "ENVO_01000481 ⊑ ENVO_01000480"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000545",
+   "label": "ionosphere",
+   "definition": "The ionosphere is a layer of the Earth's atmosphere which extends from about 60 to 1,000 kilometers above the planetary surface and is ionised by solar radiation. It includes the thermosphere and parts of the mesosphere and exosphere.",
+   "claims": [],
+   "invalid": [
+    "{\"claims\":[{\"kind\":\"sub\",\"super\":\"T12\"},{\"kind\":\"some\",\"prop\":\"P1\",\"filler\":\"T25\"},{\"kind\":\"some\",\"prop\":\"P7\",\"filler\":\"T24\"}]}\n\nWait, I need to correct this: the definition says the ionosphere is ion"
+   ],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000610",
+   "label": "motor",
+   "definition": "A motor is a machine designed to convert one or more forms of energy into mechanical energy.",
+   "claims": [
+    {
+     "claim": "motor ⊑ ∃has input.energy",
+     "lean": "∀ x, c_ENVO_01000610 x → ∃ y, p_RO_0002233 x y ∧ c_ENVO_2000015 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000666",
+   "label": "area of open water",
+   "definition": "An area of a planet's surface which is primarily composed of water in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction.",
+   "claims": [
+    {
+     "claim": "area of open water ⊑ ∃part of.planetary surface",
+     "lean": "∀ x, c_ENVO_01000666 x → ∃ y, p_BFO_0000050 x y ∧ c_ENVO_01000324 y",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000666 ⊑ ∃BFO_0000050.ENVO_01000324"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000814",
+   "label": "solid environmental material",
+   "definition": "An environmental material which is in a solid state.",
+   "claims": [
+    {
+     "claim": "solid environmental material ⊑ environmental material",
+     "lean": "∀ x, c_ENVO_01000814 x → c_ENVO_00010483 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000814 ⊑ ENVO_00010483"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000821",
+   "label": "photosphere",
+   "definition": "An astronomical body part which is composed of those parts of a star, distal from the star's core, from which light is radiated into space.",
+   "claims": [
+    {
+     "claim": "photosphere ⊑ astronomical body part",
+     "lean": "∀ x, c_ENVO_01000821 x → c_ENVO_01000813 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000821 ⊑ ENVO_01000813"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "photosphere ⊑ ∃part of.star",
+     "lean": "∀ x, c_ENVO_01000821 x → ∃ y, p_BFO_0000050 x y ∧ c_ENVO_01000801 y",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000821 ⊑ ∃BFO_0000050.ENVO_01000801"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000859",
+   "label": "tropical marine upwelling biome",
+   "definition": "A marine upwelling biome which is subject to tropical climate patterns.",
+   "claims": [
+    {
+     "claim": "tropical marine upwelling biome ⊑ marine upwelling biome",
+     "lean": "∀ x, c_ENVO_01000859 x → c_ENVO_01000858 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000859 ⊑ ENVO_01000858"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000968",
+   "label": "water intake",
+   "definition": "A hydraulic-engineering installation which transports water - in specified amounts, of a specified quality, and in accordance with a water-consumption plan - from a source of supply into a conduit.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01000992",
+   "label": "shower fixture",
+   "definition": "A plumbing fixture within which a human or other animal may bathe under a spray of water.",
+   "claims": [
+    {
+     "claim": "shower fixture ⊑ plumbing fixture",
+     "lean": "∀ x, c_ENVO_01000992 x → c_ENVO_01000989 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01000992 ⊑ ENVO_01000989"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001036",
+   "label": "sediment permeated by saline water",
+   "definition": "Sediment which has its porespace filled by water with increased levels of sodium chloride and other salts.",
+   "claims": [
+    {
+     "claim": "sediment permeated by saline water ⊑ sediment",
+     "lean": "∀ x, c_ENVO_01001036 x → c_ENVO_00002007 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001036 ⊑ ENVO_00002007"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001057",
+   "label": "environment associated with a plant part or small plant",
+   "definition": "An environmental system determined by part of a living or dead plant, or a whole small plant.",
+   "claims": [
+    {
+     "claim": "environment associated with a plant part or small plant ⊑ environmental system",
+     "lean": "∀ x, c_ENVO_01001057 x → c_ENVO_01000254 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001057 ⊑ ENVO_01001110",
+      "ENVO_01001110 ⊑ ENVO_01000254"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001088",
+   "label": "aerosolised liquids",
+   "definition": "An aerosol which has non-gaseous parts that are primarily composed of liquid droplets.",
+   "claims": [
+    {
+     "claim": "aerosolised liquids ⊑ aerosol",
+     "lean": "∀ x, c_ENVO_01001088 x → c_ENVO_00010505 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001088 ⊑ ENVO_00010505"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001105",
+   "label": "aeolian lake",
+   "definition": "A lake which fills a basin that has been dammed by wind-blown sand,  formed between sand dunes oriented by winds; or formed by wind action under previously arid paleoenvironments.",
+   "claims": [
+    {
+     "claim": "aeolian lake ⊑ lake",
+     "lean": "∀ x, c_ENVO_01001105 x → c_ENVO_00000020 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001105 ⊑ ENVO_00000020"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001146",
+   "label": "photoevaporation",
+   "definition": "A process during which energetic radiation ionises gas and causes it to disperse away from the ionising source.",
+   "claims": [
+    {
+     "claim": "photoevaporation ⊑ ∃has participant.radiation",
+     "lean": "∀ x, c_ENVO_01001146 x → ∃ y, p_RO_0000057 x y ∧ c_ENVO_01001023 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001198",
+   "label": "intrinsic magnetosphere",
+   "definition": "A magnetosphere which shields the body generating it from the stellar wind by withstanding the stellar wind's pressure before it reaches the body.",
+   "claims": [],
+   "invalid": [
+    "{\"claims\": [{\"kind\": \"sub\", \"super\": \"T3\"}, {\"kind\": \"some\", \"prop\": \"P7\", \"filler\": \"T12\"}]}\n\nWait — the definition says the magnetosphere shields the body generating it; \"generates\" runs from body t"
+   ],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001263",
+   "label": "area designated for human defecation",
+   "definition": "A site which has been designated as a place where humans may defecate.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001294",
+   "label": "convective storm",
+   "definition": "An atmospheric storm which is generated by the heating and convection of moist and unstable air masses.",
+   "claims": [
+    {
+     "claim": "convective storm ⊑ atmospheric storm",
+     "lean": "∀ x, c_ENVO_01001294 x → c_ENVO_01000877 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001294 ⊑ ENVO_01000877"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001295",
+   "label": "extra-tropical cyclone",
+   "definition": "A warm-core cyclone which occurs in the middle and high latitudes, primarily drawing energy from horizontal temperature contrasts between atmospheric fronts.",
+   "claims": [
+    {
+     "claim": "extra-tropical cyclone ⊑ warm core cyclone",
+     "lean": "∀ x, c_ENVO_01001295 x → c_ENVO_01001298 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001295 ⊑ ENVO_01001298"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001310",
+   "label": "liquid surface layer",
+   "definition": "A liquid surface layer which is in contact with air.",
+   "claims": [],
+   "invalid": [
+    "{\"claims\":[{\"kind\":\"sub\",\"super\":\"T2\"},{\"kind\":\"sub\",\"super\":\"T1\"},{\"kind\":\"some\",\"prop\":\"P17\",\"filler\":\"T20\"}]}\n\nWait — that last claim isn't supported by the definition (air isn't the ozone layer). "
+   ],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001316",
+   "label": "estuarine open water upper water column",
+   "definition": "A layer of estuarine water which extends from the surface of the water column to the pycnocline or mid-depth and from a fiat boundary where the estuary bed below the water column reaches a depth of 4 meters until the end of the estuary most distal from the coast.",
+   "claims": [
+    {
+     "claim": "estuarine open water upper water column ⊑ aquatic estuarine layer",
+     "lean": "∀ x, c_ENVO_01001316 x → c_ENVO_01001301 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001316 ⊑ ENVO_01001301"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001344",
+   "label": "freshwater seep riverine anchor ice",
+   "definition": "Anchor ice which is attached to a riverbed where a river flows into a marine water body and which is formed by the freezing of freshwater seeping out of the riverbed's sediments.",
+   "claims": [
+    {
+     "claim": "freshwater seep riverine anchor ice ⊑ anchor ice",
+     "lean": "∀ x, c_ENVO_01001344 x → c_ENVO_01001335 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001344 ⊑ ENVO_01001337",
+      "ENVO_01001337 ⊑ ENVO_01001335"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "freshwater seep riverine anchor ice ⊑ ∃located in.river bed",
+     "lean": "∀ x, c_ENVO_01001344 x → ∃ y, p_RO_0001025 x y ∧ c_ENVO_00000384 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001426",
+   "label": "cirrocumulus castellanus cloud",
+   "definition": "A cirrocumulus cloud which 1) has linearly arranged cumuliform protuberances which resemble crenellated turrets or towers, some of which are taller than they are wide in some portion of their upper parts, 2) possess a lower region or base which connects these protuberances.",
+   "claims": [
+    {
+     "claim": "cirrocumulus castellanus cloud ⊑ cirrocumulus cloud",
+     "lean": "∀ x, c_ENVO_01001426 x → c_ENVO_01001407 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001426 ⊑ ENVO_01001407"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001487",
+   "label": "waterspout",
+   "definition": "A tornado which connects a cumulus or cumulonimbus cloud to a body of water, often transporting water from that water body along the spiraling winds constituting  its vortex.",
+   "claims": [
+    {
+     "claim": "waterspout ⊑ tornado",
+     "lean": "∀ x, c_ENVO_01001487 x → c_ENVO_01001482 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001487 ⊑ ENVO_01001482"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "waterspout ⊑ ∃connects.water body",
+     "lean": "∀ x, c_ENVO_01001487 x → ∃ y, p_RO_0002176 x y ∧ c_ENVO_00000063 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001535",
+   "label": "floeberg",
+   "definition": "An ice mass which is composed of a large amount of sea ice in the form of a hummock or a group of such hummocks, frozen together and separated from any surrounding ice by sea water.",
+   "claims": [
+    {
+     "claim": "floeberg ⊑ ice mass",
+     "lean": "∀ x, c_ENVO_01001535 x → c_ENVO_01000293 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001535 ⊑ ENVO_01001536",
+      "ENVO_01001536 ⊑ ENVO_01000293"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "floeberg ⊑ ∃part of.hummock",
+     "lean": "∀ x, c_ENVO_01001535 x → ∃ y, p_BFO_0000050 x y ∧ c_ENVO_00000516 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    },
+    {
+     "claim": "floeberg ⊑ ∃surrounded by.sea water",
+     "lean": "∀ x, c_ENVO_01001535 x → ∃ y, p_RO_0002219 x y ∧ c_ENVO_00002149 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_01001551",
+   "label": "ice lead",
+   "definition": "A surface layer of a water body which has been formed as the result of surface ice fracturing and moving apart.",
+   "claims": [
+    {
+     "claim": "ice lead ⊑ surface layer of a water body",
+     "lean": "∀ x, c_ENVO_01001551 x → c_ENVO_01001554 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_01001551 ⊑ ENVO_01001554"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_02000039",
+   "label": "synovial fluid material",
+   "definition": "A bodily fluid material which is composed primarily of synovial fluid, a bodily fluid secreted by the synovial membrane into the joint cavity to form a thin layer at the surface of cartilage.",
+   "claims": [
+    {
+     "claim": "synovial fluid material ⊑ bodily fluid material",
+     "lean": "∀ x, c_ENVO_02000039 x → c_ENVO_02000019 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_02000039 ⊑ ENVO_02000019"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_02500042",
+   "label": "pollution control",
+   "definition": "A planned process during which the amount of pollutants released into an environmental system is regulated.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_03000013",
+   "label": "cirque glacier",
+   "definition": "A small glacier contained within a cirque basin.",
+   "claims": [
+    {
+     "claim": "cirque glacier ⊑ glacier",
+     "lean": "∀ x, c_ENVO_03000013 x → c_ENVO_00000133 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_03000013 ⊑ ENVO_00000133"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "cirque glacier ⊑ ∃located in.cirque",
+     "lean": "∀ x, c_ENVO_03000013 x → ∃ y, p_RO_0001025 x y ∧ c_ENVO_00000155 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_03000094",
+   "label": "methane gas emission process",
+   "definition": "A hydrocarbon gas emission process during which a portion of methane gas is transported into the atmosphere.",
+   "claims": [
+    {
+     "claim": "methane gas emission process ⊑ hydrocarbon gas emission process",
+     "lean": "∀ x, c_ENVO_03000094 x → c_ENVO_03000093 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_03000094 ⊑ ENVO_03000093"
+     ],
+     "fragment": false,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_2000005",
+   "label": "freshwater algal bloom",
+   "definition": "An algal bloom that is located in freshwater. Freshwater algal blooms are the result of an excess of nutrients, particularly some phosphates.",
+   "claims": [
+    {
+     "claim": "freshwater algal bloom ⊑ algal bloom",
+     "lean": "∀ x, c_ENVO_2000005 x → c_ENVO_2000004 x",
+     "verdict": "agrees",
+     "kernel": "accepted",
+     "because": [
+      "ENVO_2000005 ⊑ ENVO_2000004"
+     ],
+     "fragment": false,
+     "detail": ""
+    },
+    {
+     "claim": "freshwater algal bloom ⊑ ∃located in.freshwater environment",
+     "lean": "∀ x, c_ENVO_2000005 x → ∃ y, p_RO_0001025 x y ∧ c_ENVO_01000306 y",
+     "verdict": "says more",
+     "kernel": "accepted",
+     "because": [],
+     "fragment": true,
+     "detail": ""
+    }
+   ],
+   "invalid": [],
+   "error": ""
+  },
+  {
+   "class": "http://purl.obolibrary.org/obo/ENVO_3100016",
+   "label": "concentration of hydrogen peroxide in water",
+   "definition": "The concentration of hydrogen peroxide when measured in water.",
+   "claims": [],
+   "invalid": [],
+   "error": ""
+  }
+ ]
+}

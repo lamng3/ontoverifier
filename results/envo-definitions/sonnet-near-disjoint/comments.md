@@ -1,0 +1,220 @@
+# Definitions against axioms: /data/envo.owl
+
+Model: `command:claude -p --model claude-sonnet-5-5 --tools "" --no-session-persistence --setting-sources ""`. 80 definitions, 62 with claims. Verdicts: {'agrees': 57, 'says more': 20}.
+
+## says more (20)
+
+- **caldera**: A feature formed by the collapse of land following a volcanic eruption.
+  - claim: `caldera ⊑ ∃derives from.volcanic eruption` (kernel: accepted)
+- **meromictic lake**: A lake which has layers of water which do not intermix. The deepest layer of water in such a lake does not contain any dissolved oxygen. The layers of sediment at the bottom of a meromictic lake remain relatively undisturbed because there are no living organisms to stir them up.
+  - claim: `meromictic lake ⊑ ∃part of.lake layer` (kernel: accepted)
+- **marine neritic zone**: The water mass of an ocean directly above a continental shelf.
+  - claim: `marine neritic zone ⊑ water mass` (kernel: accepted)
+- **marine neritic zone**: The water mass of an ocean directly above a continental shelf.
+  - claim: `marine neritic zone ⊑ ∃part of.ocean` (kernel: accepted)
+- **marine neritic zone**: The water mass of an ocean directly above a continental shelf.
+  - claim: `marine neritic zone ⊑ ∃adjacent to.continental shelf` (kernel: accepted)
+- **oceanic zone**: The water mass of an ocean that is not above a continental shelf.
+  - claim: `oceanic zone ⊑ water mass` (kernel: accepted)
+- **igneous rock**: Rock formed from molten magma.
+  - claim: `igneous rock ⊑ ∃derives from.magma` (kernel: accepted)
+- **plutonic rock**: An igneous rock that results from the crystallization of a magma below the surface of the Earth.
+  - claim: `plutonic rock ⊑ ∃derives from.magma` (kernel: accepted)
+- **marine neritic benthic zone biome**: The marine neritic zone biome comprises sea floor from the high tide mark to a continental shelf break. This zone generally extends to 200 m below average sea level.
+  - claim: `marine neritic benthic zone biome ⊑ ∃part of.marine neritic zone` (kernel: accepted)
+- **marine hydrothermal vent biome**: The marine hydrothermal vent biome comprises regions of the marine benthic biome where heat generated due to tectonic activity, either at divergent plate boundaries or convergent ocean plates where back-arc spreading occurs, is released or 'vented' to the surface. The resultant high temperature water jets are laden with dissolved metals and minerals.
+  - claim: `marine hydrothermal vent biome ⊑ ∃part of.marine benthic biome` (kernel: accepted)
+- **oceanic sea surface microlayer biome**: The oceanic sea surface microlayer (SML) biome comprises the top 1000 micrometers of the marine surface waters occurring offshore, away from a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.
+  - claim: `oceanic sea surface microlayer biome ⊑ boundary layer` (kernel: accepted)
+- **oceanic sea surface microlayer biome**: The oceanic sea surface microlayer (SML) biome comprises the top 1000 micrometers of the marine surface waters occurring offshore, away from a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.
+  - claim: `oceanic sea surface microlayer biome ⊑ sea surface layer` (kernel: accepted)
+- **neritic sea surface microlayer biome**: The neritic sea surface microlayer (SML) biome comprises the top 1000 micrometers of marine surface waters occurring above a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.
+  - claim: `neritic sea surface microlayer biome ⊑ boundary layer` (kernel: accepted)
+- **neritic sea surface microlayer biome**: The neritic sea surface microlayer (SML) biome comprises the top 1000 micrometers of marine surface waters occurring above a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.
+  - claim: `neritic sea surface microlayer biome ⊑ surface layer of a water body` (kernel: accepted)
+- **temperate broadleaf forest biome**: A broadleaf forest which is subject to temperate climate patterns.
+  - claim: `temperate broadleaf forest biome ⊑ broadleaf forest` (kernel: accepted)
+- **subtropical shrubland biome**: A shrubland biome which is subject to subtropical climate patterns.
+  - claim: `subtropical shrubland biome ⊑ ∃has_condition.subtropical` (kernel: accepted)
+- **basalt**: Basalt is a volcanic rock which is formed by the rapid cooling of basaltic lava.
+  - claim: `basalt ⊑ volcanic rock` (kernel: accepted)
+- **scoria**: Scoria is a highly vesicular, dark colored volcanic rock that may or may not contain crystals.
+  - claim: `scoria ⊑ volcanic rock` (kernel: accepted)
+- **alluvial deposit**: A rock which is formed as a result of the lithification of alluvium.
+  - claim: `alluvial deposit ⊑ ∃derives from.alluvium` (kernel: accepted)
+- **oil shale**: An organic-rich fine-grained sedimentary rock containing kerogen from which liquid hydrocarbons called shale oil can be produced.
+  - claim: `oil shale ⊑ ∃has participant.kerogen` (kernel: accepted)
+
+## agrees (57)
+
+- **reservoir**: An artificial body of water, often contained by a dam, constructed for the purpose of water storage.
+  - claim: `reservoir ⊑ water body` (kernel: accepted)
+  - because: `ENVO_00000025 ⊑ ENVO_00000377`; `ENVO_00000377 ⊑ ENVO_00000020`; `ENVO_00000020 ⊑ ENVO_01000617`; `ENVO_01000617 ⊑ ENVO_00000063`
+- **caldera**: A feature formed by the collapse of land following a volcanic eruption.
+  - claim: `caldera ⊑ volcanic feature` (kernel: accepted)
+  - because: `ENVO_00000096 ⊑ ENVO_00000094`
+- **meromictic lake**: A lake which has layers of water which do not intermix. The deepest layer of water in such a lake does not contain any dissolved oxygen. The layers of sediment at the bottom of a meromictic lake remain relatively undisturbed because there are no living organisms to stir them up.
+  - claim: `meromictic lake ⊑ lake` (kernel: accepted)
+  - because: `ENVO_00000199 ⊑ ENVO_00000020`
+- **oceanic zone**: The water mass of an ocean that is not above a continental shelf.
+  - claim: `oceanic zone ⊑ ∃part of.ocean` (kernel: accepted)
+  - because: `ENVO_00000207 ⊑ ∃BFO_0000050.ENVO_00000015`
+- **volcanic crater**: A crater formed by a volcano, within which occurs a vent (or vents) from which magma erupts as gases, lava, and ejecta.
+  - claim: `volcanic crater ⊑ crater` (kernel: accepted)
+  - because: `ENVO_00000246 ⊑ ENVO_00000514`
+- **hydroelectric reservoir**: A reservoir constructed for the purpose of generating electricity.
+  - claim: `hydroelectric reservoir ⊑ reservoir` (kernel: accepted)
+  - because: `ENVO_00000448 ⊑ ENVO_00000025`
+- **igneous rock**: Rock formed from molten magma.
+  - claim: `igneous rock ⊑ rock` (kernel: accepted)
+  - because: `ENVO_00002013 ⊑ ENVO_00001995`
+- **plutonic rock**: An igneous rock that results from the crystallization of a magma below the surface of the Earth.
+  - claim: `plutonic rock ⊑ igneous rock` (kernel: accepted)
+  - because: `ENVO_00002014 ⊑ ENVO_00002013`
+- **metamorphic rock**: A rock formed by subjecting any rock type (including previously-formed metamorphic rock) to different temperature and pressure conditions than those in which the original rock was formed. These temperatures and pressures are always higher than those at the Earth's surface and must be sufficiently high so as to change the original minerals into other mineral types or else into other forms of the same minerals (e.g. by recrystallisation).
+  - claim: `metamorphic rock ⊑ rock` (kernel: accepted)
+  - because: `ENVO_00002017 ⊑ ENVO_00001995`
+- **marine salt marsh biome**: The marine salt marsh biome comprises marshes that are transitional intertidals between land and salty or brackish marine water (e.g.: sloughs, bays, estuaries). It is dominated by halophytic (salt tolerant) herbaceous plants. The daily tidal surges bring in nutrients, which tend to settle in roots of the plants within the salt marsh. The natural chemical activity of salty (or brackish) water and the tendency of algae to bloom in the shallow unshaded water also allow for great biodiversity.
+  - claim: `marine salt marsh biome ⊑ marine biome` (kernel: accepted)
+  - because: `ENVO_01000022 ⊑ ENVO_00000447`
+- **marine pelagic biome**: The marine pelagic biome (pelagic meaning open sea) is that of the marine water column, from the surface to the greatest depths.
+  - claim: `marine pelagic biome ⊑ marine biome` (kernel: accepted)
+  - because: `ENVO_01000023 ⊑ ENVO_00000447`
+- **marine neritic benthic zone biome**: The marine neritic zone biome comprises sea floor from the high tide mark to a continental shelf break. This zone generally extends to 200 m below average sea level.
+  - claim: `marine neritic benthic zone biome ⊑ marine benthic biome` (kernel: accepted)
+  - because: `ENVO_01000025 ⊑ ENVO_01000024`
+- **marine hadal zone biome**: The marine hadal zone biome describes sea floor deeper than 6000 m such as that of the oceanic trenches.
+  - claim: `marine hadal zone biome ⊑ marine benthic biome` (kernel: accepted)
+  - because: `ENVO_01000028 ⊑ ENVO_01000024`
+- **oceanic sea surface microlayer biome**: The oceanic sea surface microlayer (SML) biome comprises the top 1000 micrometers of the marine surface waters occurring offshore, away from a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.
+  - claim: `oceanic sea surface microlayer biome ⊓ neritic sea surface microlayer biome ⊑ ⊥` (kernel: accepted)
+  - because: `ENVO_01000041 ⊑ ENVO_01000032`; `ENVO_01000034 ⊑ ENVO_01000033`; `ENVO_01000032 ⊓ ENVO_01000033 ⊑ ⊥`
+- **oceanic epipelagic zone biome**: The oceanic epipelagic zone biome comprises regions of the marine water column that occur offshore, beyond a continental shelf. This biome extends from the surface of the ocean to a depth of ca. 200-250m. Throughout the zone the light field tends to be asymmetrical vertically, so that the direction and elevation of the sun can still be detected. The oceanic epipelagic zone biome encompasses the euphotic zone and, where and when it occurs, the seasonal thermocline.
+  - claim: `oceanic epipelagic zone biome ⊑ oceanic pelagic zone biome` (kernel: accepted)
+  - because: `ENVO_01000035 ⊑ ENVO_01000033`
+- **oceanic benthopelagic zone biome**: The benthopelagic zone biome comprises regions of the marine water column which usually coincide with the benthic boundary layer (BBL) - the layer of isothermal and isohaline water contiguous to the sea floor. A general reversal in the declining gradient of pelagic biomass may be observed here, perhaps explained by viable nutrition on the sea floor being resuspended by bottom currents. This zone typically extends 100 m above the seafloor, but may reach upto1000 m during benthic storms.
+  - claim: `oceanic benthopelagic zone biome ⊑ marine pelagic biome` (kernel: accepted)
+  - because: `ENVO_01000040 ⊑ ENVO_01000033`; `ENVO_01000033 ⊑ ENVO_01000023`
+- **epeiric sea biome**: The epeiric sea (also known as an epicontinental sea) biome comprises a shallow seas that extend over part of a continent. Epeiric seas are usually associated with the marine transgressions of the geologic  past, which have variously been due to either global eustatic sea level changes, local tectonic deformation, or both, and are occasionally semi-cyclic.
+  - claim: `epeiric sea biome ⊑ marine biome` (kernel: accepted)
+  - because: `ENVO_01000045 ⊑ ENVO_00000447`
+- **marine coral reef biome**: The marine coral reef biome comprises constructional wave-resistant entities which are primarily built by corals and are often cemented together. The growth of these structures is aided by zooxanthellae, algae that are symbiotic with the reef-building corals.
+  - claim: `marine coral reef biome ⊑ marine reef biome` (kernel: accepted)
+  - because: `ENVO_01000049 ⊑ ENVO_01000029`
+- **marine black smoker biome**: A marine black smoker biome comprises regions of the marine hydrothermal vent biome characterised by a black vent plume. This black plume is a consequence of dissolved metals and minerals forming complexes with sulphide and indicates polymetallic sulphide mineral deposits beneath the surface.
+  - claim: `marine black smoker biome ⊑ marine hydrothermal vent biome` (kernel: accepted)
+  - because: `ENVO_01000051 ⊑ ENVO_01000030`
+- **marine white smoker biome**: A marine white smoker biome comprises regions of the marine hydrothermal vent biome characterised by lightly hued plumes, typically containing barium, calcium, and silicon. These vents tend to have lower temperature plumes when compared to black smoker environments.
+  - claim: `marine white smoker biome ⊑ marine hydrothermal vent biome` (kernel: accepted)
+  - because: `ENVO_01000052 ⊑ ENVO_01000030`
+- **marine basaltic hydrothermal vent biome**: A marine basaltic hydrothermal vent biome comprises regions of the marine hydrothermal vent biome hosted on basaltic rocks. Basalt generally has a composition of 45 to 55 wt % SiO2, 2 to 6 wt % total alkalis, 0.5 to 2.0 wt % TiO2, 5 to 14 wt % FeO and 14 wt % or more Al2O3. Contents of CaO are commonly near 10 wt %, those of MgO commonly in the range 5 to 12 wt %.
+  - claim: `marine basaltic hydrothermal vent biome ⊑ marine hydrothermal vent biome` (kernel: accepted)
+  - because: `ENVO_01000054 ⊑ ENVO_01000030`
+- **forest biome**: A forest biome is a terrestrial biome which includes, across its entire spatial extent, densely packed vegetation which strongly limits light penetration to the forest floor.
+  - claim: `forest biome ⊑ terrestrial biome` (kernel: accepted)
+  - because: `ENVO_01000174 ⊑ ENVO_00000446`
+- **savanna biome**: A savanna biome is a woodland biome which has seasonal water availability and includes, across its entire spatial extent, trees spaced sufficiently far apart to allow an unbroken layer of grass, sedge (Cyperaceae) or  rush (Juncaceae) communities to live.
+  - claim: `savanna biome ⊑ woodland biome` (kernel: accepted)
+  - because: `ENVO_01000178 ⊑ ENVO_01000175`
+- **desert biome**: A desert biome is a terrestrial biome which loses more liquid water by evapotranspiration than is supplied by precipitation and includes communities adapted to these conditions.
+  - claim: `desert biome ⊑ terrestrial biome` (kernel: accepted)
+  - because: `ENVO_01000179 ⊑ ENVO_00000446`
+- **mangrove biome**: A mangrove biome is a terrestrial biome which includes, across its spatial extent, mangrove plants (Rhizophoraceae). Mangrove plants are able to withstand high levels of salinity as well as regions of anoxia and frequent tidal inundation. Mangrove biomes often occur near tropical and sub-tropical estuaries and depositional marine coastal environments where fine sediments (often with high organic content) collect in areas protected from high energy wave action.
+  - claim: `mangrove biome ⊑ terrestrial biome` (kernel: accepted)
+  - because: `ENVO_01000181 ⊑ ENVO_00000446`
+- **temperate desert biome**: A temperate desert biome is a desert biome which has communities adapted to intermediate insolation, low rainfall, and large temperature variations between winter and summer. Winter temperatures may fall below 0 degrees Celsius. Some precipitation in this biome may fall as snow.
+  - claim: `temperate desert biome ⊑ desert biome` (kernel: accepted)
+  - because: `ENVO_01000182 ⊑ ENVO_01000179`
+- **flooded savanna biome**: A flooded savanna biome is a savanna biome which has very wet to saturated soil moisture content.
+  - claim: `flooded savanna biome ⊑ savanna biome` (kernel: accepted)
+  - because: `ENVO_01000190 ⊑ ENVO_01000178`
+- **coniferous forest biome**: A coniferous forest biome is a forest biome which contains densely packed populations or communities of coniferous trees, strongly limiting light penetration to the forest floor.
+  - claim: `coniferous forest biome ⊑ forest biome` (kernel: accepted)
+  - because: `ENVO_01000196 ⊑ ENVO_01000174`
+- **tropical broadleaf forest biome**: A broadleaf forest biome which is subject to tropical climate patterns.
+  - claim: `tropical broadleaf forest biome ⊑ broadleaf forest biome` (kernel: accepted)
+  - because: `ENVO_01000200 ⊑ ENVO_01000197`
+- **temperate broadleaf forest biome**: A broadleaf forest which is subject to temperate climate patterns.
+  - claim: `temperate broadleaf forest biome ⊑ broadleaf forest biome` (kernel: accepted)
+  - because: `ENVO_01000202 ⊑ ENVO_01000197`
+- **mediterranean woodland biome**: A subtropical woodland biome which includes communities adapted to hot to warm, dry summers, mild to cold, rainy winters, and the influence of large, usually marine, bodies of water.
+  - claim: `mediterranean woodland biome ⊑ subtropical woodland biome` (kernel: accepted)
+  - because: `ENVO_01000208 ⊑ ENVO_01000222`
+- **subtropical coniferous forest biome**: A coniferous forest biome which is subject to subtropical climate patterns.
+  - claim: `subtropical coniferous forest biome ⊑ coniferous forest biome` (kernel: accepted)
+  - because: `ENVO_01000209 ⊑ ENVO_01000196`
+- **temperate coniferous forest biome**: A coniferous forest biome which is subject to temperate climate patterns.
+  - claim: `temperate coniferous forest biome ⊑ coniferous forest biome` (kernel: accepted)
+  - because: `ENVO_01000211 ⊑ ENVO_01000196`
+- **subtropical shrubland biome**: A shrubland biome which is subject to subtropical climate patterns.
+  - claim: `subtropical shrubland biome ⊑ shrubland biome` (kernel: accepted)
+  - because: `ENVO_01000213 ⊑ ENVO_01000176`
+- **montane shrubland biome**: A montane shrubland biome is a shrubland biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions.
+  - claim: `montane shrubland biome ⊑ shrubland biome` (kernel: accepted)
+  - because: `ENVO_01000216 ⊑ ENVO_01000176`
+- **anthropogenic terrestrial biome**: An anthropogenic terrestrial biome is a terrestrial biome which has community structures determined by human activity.
+  - claim: `anthropogenic terrestrial biome ⊑ terrestrial biome` (kernel: accepted)
+  - because: `ENVO_01000219 ⊑ ENVO_00000446`
+- **montane savanna biome**: A montane savanna biome is a savanna biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions.
+  - claim: `montane savanna biome ⊑ savanna biome` (kernel: accepted)
+  - because: `ENVO_01000223 ⊑ ENVO_01000178`
+- **mediterranean savanna biome**: A savanna biome which is subject to mediterranean climate patterns.
+  - claim: `mediterranean savanna biome ⊑ savanna biome` (kernel: accepted)
+  - because: `ENVO_01000229 ⊑ ENVO_01000187`; `ENVO_01000187 ⊑ ENVO_01000178`
+- **cropland biome**: A cropland biome is an anthropogenic terrestrial biome which is primarily used for agricultural activity and which contains no village or larger human settlement.
+  - claim: `cropland biome ⊑ anthropogenic terrestrial biome` (kernel: accepted)
+  - because: `ENVO_01000245 ⊑ ENVO_01000219`
+- **urban biome**: An urban biome is a dense settlement biome which has been urbanised.
+  - claim: `urban biome ⊑ dense settlement biome` (kernel: accepted)
+  - because: `ENVO_01000249 ⊑ ENVO_01000248`
+- **mineral material**: A mineral material is an environmental material which is primarily composed of some substance that is naturally occurring, solid and stable at room temperature, representable by a chemical formula, usually abiogenic, and that has an ordered atomic structure.
+  - claim: `mineral material ⊑ environmental material` (kernel: accepted)
+  - because: `ENVO_01000256 ⊑ ENVO_00010483`
+- **siltstone**: A sedimentary rock which is composed mainly of silt. This rock has a grainsize in the silt range, finer than sandstone and coarser than claystones.
+  - claim: `siltstone ⊑ sedimentary rock` (kernel: accepted)
+  - because: `ENVO_01000269 ⊑ ENVO_01000271`; `ENVO_01000271 ⊑ ENVO_00002016`
+- **claystone**: A clastic sedimentary rock which is composed primarily of clay sized particles.
+  - claim: `claystone ⊑ clastic sedimentary rock` (kernel: accepted)
+  - because: `ENVO_01000270 ⊑ ENVO_01000271`
+- **clastic sedimentary rock**: Clastic sedimentary rocks are sedimentary rocks that are composed of silicate minerals and rock fragments that were transported by moving fluids. Clastic rocks are composed largely of quartz, feldspar, rock (lithic) fragments, clay minerals, and mica; numerous other minerals may be present as accessories and may be important locally.
+  - claim: `clastic sedimentary rock ⊑ sedimentary rock` (kernel: accepted)
+  - because: `ENVO_01000271 ⊑ ENVO_00002016`
+- **mudstone**: A mudstone is a clastic sedimentary rock which contains a mixture of at least one third of silt- and one third of clay-sized particles.
+  - claim: `mudstone ⊑ clastic sedimentary rock` (kernel: accepted)
+  - because: `ENVO_01000272 ⊑ ENVO_01000271`
+- **dimictic lake**: A dimitic lake is a holomictic lake which mixes from top to bottom during two mixing periods each year. Mixing typically occurs during the spring and autumn, when the lake is "isothermal" (i.e., at the same temperature from the top to the bottom). At this time the water throughout the lake is about 4°C, and, in the absence of any temperature or density differences, the lake readily mixes from top to bottom. These lakes are common in regions with temperate climates.
+  - claim: `dimictic lake ⊑ holomictic lake` (kernel: accepted)
+  - because: `ENVO_01000286 ⊑ ENVO_01000285`
+- **polymictic lake**: A polymictic lake is a holomictic lake which is too shallow to allow thermal stratification and which can mix from top to bottom through the ice-free period of the year.
+  - claim: `polymictic lake ⊑ holomictic lake` (kernel: accepted)
+  - because: `ENVO_01000287 ⊑ ENVO_01000285`
+- **cold polymictic lake**: A cold polymictic lake is a polymictic lake which is covered by ice in winter.
+  - claim: `cold polymictic lake ⊑ polymictic lake` (kernel: accepted)
+  - because: `ENVO_01000291 ⊑ ENVO_01000287`
+- **warm polymictic lake**: A warm polymictic lake is a polymictic lake which is not covered by ice at any point during the year.
+  - claim: `warm polymictic lake ⊑ polymictic lake` (kernel: accepted)
+  - because: `ENVO_01000292 ⊑ ENVO_01000287`
+- **granite**: A portion of granite is a portion of igneous  rock which  is intrusive, felsic, granular, and phaneritic.
+  - claim: `granite ⊑ igneous rock` (kernel: accepted)
+  - because: `ENVO_01000356 ⊑ ENVO_00002013`
+- **tropical marine upwelling biome**: A marine upwelling biome which is subject to tropical climate patterns.
+  - claim: `tropical marine upwelling biome ⊑ marine upwelling biome` (kernel: accepted)
+  - because: `ENVO_01000859 ⊑ ENVO_01000858`
+- **alluvial deposit**: A rock which is formed as a result of the lithification of alluvium.
+  - claim: `alluvial deposit ⊑ rock` (kernel: accepted)
+  - because: `ENVO_01001204 ⊑ ENVO_00001995`
+- **alpine tundra biome**: A tundra biome which exists at high altitudes and where vegetation - dominated by a few species of dwarf shrubs, a few grasses, sedges, lichens, and mosses - is stunted due to low temperatures and high winds.
+  - claim: `alpine tundra biome ⊑ tundra biome` (kernel: accepted)
+  - because: `ENVO_01001505 ⊑ ENVO_01000180`
+- **terrestrial ecoregion**: An ecoregion which is located on a landmass.
+  - claim: `terrestrial ecoregion ⊑ ecoregion` (kernel: accepted)
+  - because: `ENVO_01001570 ⊑ ENVO_01000276`
+- **ore**: a type of rock that contains sufficient minerals with important elements including metals that can be economically extracted from the rock.
+  - claim: `ore ⊑ rock` (kernel: accepted)
+  - because: `ENVO_02000094 ⊑ ENVO_00001995`
+- **oil shale**: An organic-rich fine-grained sedimentary rock containing kerogen from which liquid hydrocarbons called shale oil can be produced.
+  - claim: `oil shale ⊑ sedimentary rock` (kernel: accepted)
+  - because: `ENVO_02000119 ⊑ ENVO_00002056`; `ENVO_00002056 ⊑ ENVO_01000271`; `ENVO_01000271 ⊑ ENVO_00002016`
+- **methane-laden permafrost**: Permafrost which contains pockets of trapped methane gas.
+  - claim: `methane-laden permafrost ⊑ permafrost` (kernel: accepted)
+  - because: `ENVO_03000088 ⊑ ENVO_00000134`
