@@ -7,6 +7,8 @@ name = "ontoverifier"
 version = "0.1.0"
 description = "Prove things about ontologies: an untrusted search writes Lean proofs and Lean's kernel checks them."
 requires-python = ">=3.11"
+authors = [{name = "Lam Nguyen"}]
+license = {text = "BSD-3-Clause"}
 dependencies = ["rdflib>=7"]
 
 [project.optional-dependencies]

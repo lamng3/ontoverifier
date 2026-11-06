@@ -1,0 +1,10 @@
+@prefix : <http://example.org/zoo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Animal a owl:Class .
+:Plant a owl:Class ; owl:disjointWith :Animal .
+:Mammal a owl:Class ; rdfs:subClassOf :Animal .
+:Dog a owl:Class ; rdfs:subClassOf :Mammal .
+:Oak a owl:Class ; rdfs:subClassOf :Plant .
+:rex a :Dog .

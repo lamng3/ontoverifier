@@ -22,7 +22,9 @@ from pathlib import Path
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 ROOT = Path(os.environ.get("ONTOVERIFIER_ROOT", Path(__file__).resolve().parents[2]))
 ELAN = Path.home() / ".elan" / "bin"
-WORKERS = max(1, min(6, (os.cpu_count() or 2) - 2))
+# Kernel runs are long and memory-hungry, so a laptop stays usable by default. A machine
+# meant for this work asks for more with ONTOVERIFIER_WORKERS.
+WORKERS = int(os.environ.get("ONTOVERIFIER_WORKERS", 2))
 CACHE = Path(os.environ.get("ONTOVERIFIER_CACHE",
                             Path.home() / ".cache" / "ontoverifier" / "kernel.json"))
 
@@ -87,7 +89,7 @@ class Batch:
     def _key(self, text):
         return hashlib.sha256(f"{_toolchain()}\0{self.prelude}\0{text}".encode()).hexdigest()
 
-    def run(self, timeout=1800):
+    def run(self, timeout=900):
         """Write every theorem to the batch's file, and check the ones not seen before."""
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text(self.prelude + "\n" + "\n".join(self.theorems.values()))
@@ -111,11 +113,12 @@ class Batch:
         return results
 
     def _check_all(self, pending, timeout):
-        """Share the theorems out among several runs of Lean."""
+        """Share the theorems out in small runs of Lean, so a slow one only delays its own."""
         _ensure_built()
         names = list(pending)
-        parts = [names[i::WORKERS] for i in range(WORKERS) if names[i::WORKERS]]
-        with ThreadPoolExecutor(len(parts)) as pool:
+        size = max(1, len(names) // (WORKERS * 4))
+        parts = [names[i:i + size] for i in range(0, len(names), size)]
+        with ThreadPoolExecutor(WORKERS) as pool:
             runs = pool.map(lambda part: self._check(
                 {n: pending[n] for n in part[1]}, timeout, part[0]), enumerate(parts))
         return {name: checked for found in runs for name, checked in found.items()}
@@ -131,10 +134,11 @@ class Batch:
         probe = self.path.with_suffix(f".check{part}.lean")
         probe.write_text("\n".join(body))
         try:
-            run = subprocess.run(["lake", "env", "lean", "--json", str(probe.resolve())], cwd=ROOT,
+            run = subprocess.run(["nice", "-n", "10", "lake", "env", "lean", "--json",
+                                  str(probe.resolve())], cwd=ROOT,
                                  env=_env(), capture_output=True, text=True, timeout=timeout)
         except subprocess.TimeoutExpired:
-            return {n: Checked("rejected", "lean timed out") for n in pending}
+            return {n: Checked("not_run", f"lean timed out after {timeout}s") for n in pending}
         finally:
             probe.unlink(missing_ok=True)
         errors, axioms = {}, {}

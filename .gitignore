@@ -6,4 +6,4 @@ __pycache__/
 .pytest_cache/
 out/
 results/**/*.lean
-results/envo-definitions/
+results/envo-definitions/*/*.check*.lean
